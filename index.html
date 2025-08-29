@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- header/hero -->
+    <header
+      class="flex border-b py-3 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[65px] tracking-wide relative z-50"
+    >
+      <div
+        class="flex flex-wrap items-center gap-4 max-w-screen-xl mx-auto w-full"
+      >
+        <a href="javascript:void(0)" class="max-sm:hidden"
+          ><img src="Logo.png" alt="logo" class="w-50" />
+        </a>
+        <a href="javascript:void(0)" class="hidden max-sm:block"
+          ><img src="Logo.sm.png" alt="logo-small" class="w-20" />
+        </a>
+
+        <div
+          id="collapseMenu"
+          class="max-lg:hidden lg:!block max-lg:w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+        >
+          <button
+            id="toggleClose"
+            class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-3.5 h-3.5 fill-black"
+              viewBox="0 0 320.591 320.591"
+            >
+              <path
+                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                data-original="#000000"
+              ></path>
+              <path
+                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                data-original="#000000"
+              ></path>
+            </svg>
+          </button>
+
+          <ul
+            class="lg:flex lg:ml-14 lg:gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+          >
+            <li class="mb-6 hidden max-lg:block">
+              <a href="javascript:void(0)"
+                ><img src="Logo.png" alt="logo" />
+              </a>
+            </li>
+            <li class="max-lg:border-b max-lg:py-3 px-3">
+              <a
+                href="javascript:void(0)"
+                class="lg:hover:text-pink-500 text-pink-600 block text-[15px]"
+                >Home</a
+              >
+            </li>
+            <li class="max-lg:border-b max-lg:py-3 px-3">
+              <a
+                href="#blogPosts"
+                class="lg:hover:text-pink-500 text-gray-800 block text-[15px]"
+                >Blog</a
+              >
+            </li>
+            <li class="max-lg:border-b max-lg:py-3 px-3">
+              <a
+                href="javascript:void(0)"
+                class="lg:hover:text-pink-500 text-gray-800 block text-[15px]"
+                >About</a
+              >
+            </li>
+            <li class="max-lg:border-b max-lg:py-3 px-3">
+              <a
+                href="#emailMe"
+                class="lg:hover:text-pink-500 text-gray-800 block text-[15px]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex gap-4 ml-auto">
+          <button id="toggleOpen" class="lg:hidden">
+            <svg
+              class="w-7 h-7"
+              fill="#000"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- header/hero -->
+    <section>
+      <div
+        class="bg-gradient-to-b from-pink-900 via-pink-800 to-purple-500 px-6 sm:py-20 py-10 font-[sans-serif]"
+      >
+        <div class="max-w-screen-xl mx-auto text-center text-[#]">
+          <h1
+            class="text-7xl max-sm:text-3xl font-extrabold leading-tight mb-6"
+          >
+            <strong class="text-white">Welcome,</strong> Let's Code. Create &
+            Conquer...<strong class="text-white">Together</strong>
+          </h1>
+          <p class="text-lg mb-12">
+            For the fearless women who dare to disrupt the tech world
+          </p>
+          <button id="myButton"
+            type="button"
+            class="cursor-pointer inline-block bg-white text-lg font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-pink-500 transition"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- about me -->
+    <section
+      class="bg-gradient-to-b from-purple-500 to-gray-100 py-16 text-center"
+    >
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-4">
+          Hey, I’m <strong class="text-white">Keyla Welcome</strong>
+        </h2>
+        <p class="text-sm mb-3">(yes, my last name is REALLY "Welcome")</p>
+        <p class="text-lg mb-4">
+          Welcome to my little corner of the internet—where creativity and code
+          collide.<strong>Coding unapologetically</strong>. I am a
+          <strong class="text-white">Web Developer</strong>, problem-solver (sometimes),
+          and a Mother who thrives on building, breaking, and fixing
+          things (mostly in that order) it's in my nature.
+        </p>
+        <p class="text-lg mb-4">
+          This blog is for the women out there looking for a safe space to be true to themselves. Those who 
+          to <strong>Code Unapologetically</strong>. While not losing you who are in the process. Tech is not our Identity,
+          it's a gift, a passion. Women who want to prove every day to <strong>themselves</strong> that they belong here. <strong>Own your code. Own your voice.</strong>
+          Expect raw stories, real advice, and plenty of coding chaos, all while being your true lovely self.
+        </p>
+        <p class="text-xl font-semibold">
+          Here there are <strong>No apologies, Just <Code></Code></strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- blog posts -->
+    <main id="blogPosts">
+      <div class="bg-gray-100 md:px-10 px-4 py-12 font-[sans-serif]">
+        <div class="max-w-5xl max-lg:max-w-3xl max-sm:max-w-sm mx-auto">
+          <h2 class="text-3xl font-extrabold text-gray-800 mb-8">
+            Latest Blog Posts:
+          </h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-sm:gap-8"
+          >
+            <div class="bg-white rounded overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Blog Post 1"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-3">
+                  🔥 Breaking Into Tech
+                </h3>
+                <p class="text-gray-500 text-sm">
+                  Sharing my journey and how I began coding.
+                </p>
+                <p class="text-pink-500 text-[13px] font-semibold mt-4">
+                  01 Jan 2025
+                </p>
+                <a
+                  href="tech.html" 
+                  class="mt-4 inline-block px-4 py-2 rounded tracking-wider bg-pink-600 hover:bg-pink-400 text-white text-[13px]"
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <div class="bg-white rounded overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1731909888065-0c5a117b0af7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Blog Post 2"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-3">
+                  💻 How I Stay Motivated When Learning Feels Hard
+                </h3>
+                <p class="text-gray-500 text-sm">
+                  Talk with me about the "imposter syndrome" and how I keep pushing.
+                </p>
+                <p class="text-pink-500 text-[13px] font-semibold mt-4">
+                  08 Jan 2025
+                </p>
+                <a
+                  href="creativity.html"
+                  class="mt-4 inline-block px-4 py-2 rounded tracking-wider bg-pink-600 hover:bg-pink-400 text-white text-[13px]"
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <div class="bg-white rounded overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Blog Post 3"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-3">
+                  🚀 Testimonies
+                </h3>
+                <p class="text-gray-500 text-sm">
+                  Send me your testimonies and I'll share them with our Tech Besties.
+                  Maybe you'll inspire the next generation
+                </p>
+                <p class="text-pink-500 text-[13px] font-semibold mt-4">
+                  15 Jan 2025
+                </p>
+                <a
+                  href="javascript:void(0);"
+                  class="mt-4 inline-block px-4 py-2 rounded tracking-wider bg-pink-600 hover:bg-pink-400 text-white text-[13px]"
+                >Read More</a
+                >
+              </div>
+            </div>
+            <div class="bg-white rounded overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1634078111133-a1e12d6131b6?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Blog Post 3"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-3">
+                  👩‍💻 How I Stay Motivated:
+                </h3>
+                <p class="text-gray-500 text-sm">
+                 As a Mother 
+                </p>
+                <p></p>
+                <p class="text-pink-500 text-[13px] font-semibold mt-4">
+                  18 Feb 2025
+                </p>
+                <a
+                  href="javascript:void(0);"
+                  class="mt-4 inline-block px-4 py-2 rounded tracking-wider bg-pink-600 hover:bg-pink-400 text-white text-[13px]"
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <div class="bg-white rounded overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1719253480609-579ad1622c65?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Blog Post 3"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-3">
+                  🛠️ Dev Hacks & Tools
+                </h3>
+                <p class="text-gray-500 text-sm">
+                  Sharing time-saving tricks, must-have tools, and productivity
+                  tips for software engineers
+                </p>
+                <p class="text-pink-500 text-[13px] font-semibold mt-4">
+                  20 Feb 2025
+                </p>
+                <a
+                  href="javascript:void(0);"
+                  class="mt-4 inline-block px-4 py-2 rounded tracking-wider bg-pink-600 hover:bg-pink-400 text-white text-[13px]"
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <div class="bg-white rounded overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Blog Post 3"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-3">
+                  🧠 Mindset & Motivation
+                </h3>
+                <p class="text-gray-500 text-sm">
+                  Staying inspired, handling burnout, and keeping that fire
+                  alive in a male-dominated space.
+                </p>
+                <p class="text-pink-500 text-[13px] font-semibold mt-4">
+                  01 Mar 2025
+                </p>
+                <a
+                  href="javascript:void(0);"
+                  class="mt-4 inline-block px-4 py-2 rounded tracking-wider bg-pink-600 hover:bg-pink-400 text-white text-[13px]"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- email me -->
+    <section id="emailMe"
+      class="bg-gradient-to-b from-gray-100 to-purple-500 py-16 text-center"
+    >
+      <div class="max-w-2xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+          Want to Be Featured?
+        </h2>
+        <p class="text-lg text-gray-700 mb-6">
+          Are you a woman in tech making waves? I’d love to share your story as
+          a piece on the
+          <strong class="text-pink-600">"Women Who Code" Blog</strong>. Drop me
+          an email and let’s inspire the next generation of coders together!
+        </p>
+        <a
+          href="mailto:your@email.com"
+          class="inline-block bg-white text-lg font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-pink-500 transition"
+        >
+          Email Me 📩
+        </a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="bg-gradient-to-b from-purple-500 to-pink-800 font-sans tracking-wide pt-12 pb-4 px-10"
+    >
+      <div class="mx-auto flex justify-around">
+        <div>
+          <h4 class="font-semibold text-lg mb-6 text-white">Contact Me</h4>
+          <ul class="space-y-5">
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-pink-500 text-gray-300 text-[15px] transition-all"
+                >Email</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-pink-500 text-gray-300 text-[15px] transition-all"
+                >Social Media</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-pink-500 text-gray-300 text-[15px] transition-all"
+                >Linkedin</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-pink-500 text-gray-300 text-[15px] transition-all"
+                >Learn more</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-lg mb-6 text-white">Learn More</h4>
+          <ul class="space-y-5">
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-pink-500 text-gray-300 text-[15px] transition-all"
+                >Featured Reviews</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-pink-500 text-gray-300 text-[15px] transition-all"
+                >Newsletter Sign-up</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-pink-500 text-gray-300 text-[15px] transition-all"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-pink-500 text-gray-300 text-[15px] transition-all"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t text-center border-[#6b5f5f] pt-4 mt-8">
+        <p class="text-gray-300 text-[15px]">
+          © ReadymadeUI. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
