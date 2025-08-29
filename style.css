@@ -46,3 +46,8 @@ textarea:focus {
 .submit-btn:hover {
   background: #2b6cb0;
 }
+
+
+.non-working {
+  cursor: none;
+}
